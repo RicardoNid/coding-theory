@@ -71,7 +71,7 @@ layout: two-cols-header
 
 ::right::
 
-![Untitled](/Untitled%201.png)
+![Untitled](/Untitled_1.png)
 
 ---
 
@@ -100,7 +100,7 @@ layout: two-cols-header
 
 ::right::
 
-<img src='/Untitled%202.png' class='m-10 h-100'>
+<img src='/Untitled_2.png' class='m-10 h-100'>
 
 ---
 layout: two-cols-header
@@ -114,7 +114,7 @@ layout: two-cols-header
 
 ::right::
 
-<img src='/Untitled%203.png' class='m-10 h-100'>
+<img src='/Untitled_3.png' class='m-10 h-100'>
 
 
 ---
@@ -123,7 +123,7 @@ layout: two-cols-header
 
 - 虽然从定义出发,卷积编码过程的输入是semi-infinite的,但实际实现时,往往是对一个确定长度的序列进行卷积编码,为构造确定长度的序列,有下面三种方法:
 
-![Untitled](/Untitled%204.png)
+![Untitled](/Untitled_4.png)
 
 ---
 
@@ -211,13 +211,13 @@ layout: cover
 
 # 译码准则:从最小错误概率到最短距离
 
-![Untitled](/Untitled%205.png)
+![Untitled](/Untitled_5.png)
 
 ---
 
 # Trellis图和最短距离准则
 
-![Untitled](/Untitled%206.png)
+![Untitled](/Untitled_6.png)
 
 - 在上文中,我们提到了有限状态机视角下,卷积编码可以被刻画为一个trellis module,它刻画了从$i$时刻到$i+1$时刻的过程,将这一结构平行重复$n$次,我们可以得到包含时刻$0$~$n$的trellis图,它刻画了$n \times k$个码字被编码的过程.
 - 在trellis图视角下,译码等价于寻找一条从$0$时刻到达$n$时刻的路径,通过距离的恰当定义,以最大似然准则译码等价于寻找一条最短路径,下面对两种信道模型分别讨论
@@ -258,7 +258,7 @@ layout: cover
 - Viterbi算法是一种动态规划算法,这类算法依赖于最优子结构性质,即”全局最优解中必然包含局部最优解”
 - Viterbi算法利用了最短路径问题的最优子结构,即最短路径的子路径也是最短路径.因此,在Viterbi算法的搜索过程中,只保留到达每一时刻所有状态的最短路径,而非所有路径.
 
-![Untitled](/Untitled%207.png)
+![Untitled](/Untitled_7.png)
 
 ---
 
